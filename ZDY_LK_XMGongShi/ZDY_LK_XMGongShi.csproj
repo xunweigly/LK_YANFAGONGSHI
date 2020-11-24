@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{669E4972-F43B-4327-AE54-EF6175F68ED0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LKU8.shoukuan</RootNamespace>
+    <AssemblyName>ZDY_LK_XMGongShi</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ADODB, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\..\U8SOFT\Interop\ADODB.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Localization.v11.1">
+      <HintPath>..\..\ZhongDa_SoPlan\bin\Debug\DevExpress.Localization.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Interop.MSXML2">
+      <HintPath>C:\U8SOFT\Interop\Interop.MSXML2.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.U8Login, Version=1.14.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\U8SOFT\Interop\Interop.U8Login.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.U8RefService">
+      <HintPath>C:\U8SOFT\Interop\Interop.U8RefService.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.UFPortalProxyInterface">
+      <HintPath>C:\U8SOFT\Interop\Interop.UFPortalProxyInterface.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NPOI, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="Process, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UFIDA.U8.MomServiceCommon">
+      <HintPath>C:\U8SOFT\UFMOM\U8APIFramework\UFIDA.U8.MomServiceCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U8.Portal.Common">
+      <HintPath>C:\U8SOFT\Portal\UFIDA.U8.Portal.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U8.Portal.Framework">
+      <HintPath>C:\U8SOFT\Portal\UFIDA.U8.Portal.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U8.Portal.Proxy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\U8SOFT\Portal\UFIDA.U8.Portal.Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U8.U8APIFramework">
+      <HintPath>C:\U8SOFT\UFMOM\U8APIFramework\UFIDA.U8.U8APIFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U8.U8MOMAPIFramework">
+      <HintPath>C:\U8SOFT\UFMOM\U8APIFramework\UFIDA.U8.U8MOMAPIFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.U8.Framework.Login.UI">
+      <HintPath>C:\U8SOFT\Framework\UFSoft.U8.Framework.Login.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.U8.Framework.LoginContext, Version=1.0.0.0, Culture=neutral, PublicKeyToken=90e57cffdf9d854d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\U8SOFT\WCF\U8Framework\bin\framework\UFSoft.U8.Framework.LoginContext.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClsDataAuth.cs" />
+    <Compile Include="FrmMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fuzhu\canshu.cs" />
+    <Compile Include="fuzhu\CommonHelper.cs" />
+    <Compile Include="fuzhu\DbHelper2.cs" />
+    <Compile Include="fuzhu\ExcelHelper.cs" />
+    <Compile Include="fuzhu\ExtensionMethods.cs" />
+    <Compile Include="fuzhu\ClsDealField.cs" />
+    <Compile Include="fuzhu\DbHelper.cs" />
+    <Compile Include="fuzhu\Dgvfuzhu.cs" />
+    <Compile Include="fuzhu\frm_canzhao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fuzhu\frm_canzhao.designer.cs">
+      <DependentUpon>frm_canzhao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fuzhu\frm_canzhaoMulti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fuzhu\frm_canzhaoMulti.designer.cs">
+      <DependentUpon>frm_canzhaoMulti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fuzhu\SearchCondition.cs" />
+    <Compile Include="fuzhu\SearchInfo.cs" />
+    <Compile Include="fuzhu\SqlOperator.cs" />
+    <Compile Include="fuzhu\WriteLog.cs" />
+    <Compile Include="MyNetUserControl.cs" />
+    <Compile Include="NetSampleDelegate.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xialiaologin.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmMsg.resx">
+      <DependentUpon>FrmMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fuzhu\frm_canzhao.resx">
+      <DependentUpon>frm_canzhao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fuzhu\frm_canzhaoMulti.resx">
+      <DependentUpon>frm_canzhaoMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adjust write-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\analysis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\approval query.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Approve all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Increment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+    <None Include="Resources\Add a row.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Confirm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\query.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transfer.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if exist d:\u8soft\uap\runtime copy $(TargetFileName) d:\u8soft\uap\runtime</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
